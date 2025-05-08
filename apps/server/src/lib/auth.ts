@@ -8,6 +8,8 @@ import * as schema from "../db/schema/auth";
  * connected to Supabase PostgreSQL database
  */
 export const auth = betterAuth({
+  // Use environment variable for secret or use the provided secure secret
+  secret: process.env.BETTER_AUTH_SECRET || "udD8TtXBYB35WkFoIrHkROh3nc3j7r9Z",
   database: drizzleAdapter(db, {
     provider: "pg",
     schema: schema,

@@ -10,3 +10,12 @@ restartPolicyType = "on_failure"
 
 [nixpacks]
 nodejs_version = "18"
+
+# Environment variables are set in the Railway dashboard
+# Required variables:
+# - SUPABASE_URL
+# - SUPABASE_ANON_KEY
+# - SUPABASE_SERVICE_KEY
+# - SUPABASE_POSTGRES_URL
+# - BETTER_AUTH_SECRET
+# - CORS_ORIGIN
