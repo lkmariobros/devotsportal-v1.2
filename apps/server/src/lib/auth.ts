@@ -29,6 +29,6 @@ export const auth = betterAuth({
   // },
   session: {
     // Adjust session duration as needed
-    maxAge: 30 * 24 * 60 * 60, // 30 days
+    lifetime: 30 * 24 * 60 * 60, // 30 days
   },
 });
