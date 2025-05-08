@@ -1,0 +1,41 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "drizzle-kit migrate",
+    "db:run-migrations": "tsx src/db/migrate.ts",
+    "db:introspect": "drizzle-kit introspect:pg",
+    "db:inspect": "tsx src/db/introspect.ts",
+    "db:export": "tsx src/db/export-schema.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.3",
+    "@supabase/supabase-js": "^2.39.7",
+    "@trpc/client": "^11.0.0",
+    "@trpc/server": "^11.0.0",
+    "ai": "^4.2.8",
+    "better-auth": "^1.2.7",
+    "drizzle-orm": "^0.38.4",
+    "next": "15.3.0",
+    "pg": "^8.14.1",
+    "postgres": "^3.4.3",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.6",
+    "@types/node": "^20",
+    "@types/pg": "^8.11.11",
+    "@types/react": "^19",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.30.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5"
+  }
+}
